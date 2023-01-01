@@ -1,3 +1,5 @@
+/*Global*/
+
 :root {
   --primary: #ea40a4;
   --work: #3a82ee;
@@ -53,4 +55,21 @@ h4 {
   font-size: 0.875rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+/*Greeting Section*/
+.greeting .title {
+  display: flex;
+}
+
+.greeting .title input {
+  margin-left: 0.5rem;
+  flex: 1 1 0%;
+  min-width: 0;
+}
+.greeting .title,
+.greeting .title input {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 700;
 }
