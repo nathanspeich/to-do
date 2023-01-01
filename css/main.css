@@ -48,6 +48,7 @@ h3 {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -171,4 +172,66 @@ input:checked ~ .bubble::after {
 
 .create-to-do input[type='submit']:hover {
   opacity: 0.75;
+}
+
+/*To-Do List Section*/
+.to-do-list .list {
+  margin: 1rem 0;
+}
+
+.to-do-list .to-do-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+
+.to-do-item label {
+  display: block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.to-do-item .to-do-content {
+  flex: 1 1 0%;
+}
+
+.to-do-item .to-do-content {
+  color: var(--dark);
+  font-size: 1.125rem;
+}
+
+.to-do-item .actions {
+  display: flex;
+  align-items: center;
+}
+
+.to-do-item .actions button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.to-do-item .actions button:hover {
+  opacity: 0.75;
+}
+
+.to-do-item .actions .edit {
+  margin-right: 0.5rem;
+  background-color: var(--primary);
+}
+
+.to-do-item .actions .delete {
+  background-color: var(--danger);
+}
+
+.to-do-item.done .to-do-content input {
+  text-decoration: line-through;
+  color: var(--grey);
 }
