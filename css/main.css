@@ -1,18 +1,18 @@
 /*Global*/
 
 :root {
-  --primary: #ea40a4;
-  --work: #3a82ee;
+  --primary: #e44232;
+  --work: #316fea;
   --personal: var(--primary);
   --light: #eee;
-  --grey: #888;
-  --dark: #313154;
-  --danger: #ff5b57;
+  --grey: rgb(87, 87, 87);
+  --dark: rgb(40, 40, 35);
+  --danger: #e44232;
 
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-  --work-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-  --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+  --work-glow: 0px 0px 4px rgb(49, 111, 234, 0.75);
+  --personal-glow: 0px 0px 4px rgb(228, 66, 50, 0.75);
 }
 
 * {
@@ -34,6 +34,7 @@ button {
 body {
   background: var(--light);
   color: var(--dark);
+  font-size: 16px;
 }
 
 section {
@@ -43,19 +44,24 @@ section {
   padding-right: 1.5rem;
 }
 
-h3 {
+h2 {
   color: var(--dark);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
 
-h4 {
+h3 {
   color: var(--grey);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /*Greeting Section*/
@@ -71,7 +77,7 @@ h4 {
 .greeting .title,
 .greeting .title input {
   color: var(--dark);
-  font-size: 1.5rem;
+  font-size: 1.953rem;
   font-weight: 700;
 }
 
@@ -79,7 +85,7 @@ h4 {
 .create-to-do input[type='text'] {
   display: block;
   width: 100%;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 1rem 1.5rem;
   color: var(--dark);
   background-color: #fff;
@@ -153,14 +159,14 @@ input:checked ~ .bubble::after {
 
 .create-to-do .options label div {
   color: var(--dark);
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
 .create-to-do input[type='submit'] {
   display: block;
   width: 100%;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 1rem 1.5rem;
   color: #fff;
   background-color: var(--primary);
@@ -196,12 +202,13 @@ input:checked ~ .bubble::after {
 }
 
 .to-do-item .to-do-content {
+  display: flex;
   flex: 1 1 0%;
 }
 
-.to-do-item .to-do-content {
+.to-do-item .to-do-content input {
   color: var(--dark);
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .to-do-item .actions {
