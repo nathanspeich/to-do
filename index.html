@@ -8,23 +8,23 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <main class="app">
+    <main class="app container">
       <section class="greeting">
-        <h2 class="title">
-          Welcome, <input type="text" id="name" placeholder="Your name here" />
-        </h2>
+        <h1 class="title">
+          Welcome, <input type="text" id="name" placeholder="Enter your name" />
+        </h1>
       </section>
       <section class="create-to-do">
-        <h3>Create To-Do</h3>
-        <form id="new-todo-form">
-          <h4>What's on your to-do list?</h4>
+        <h2>Create To-Do</h2>
+        <form id="new-to-do-form">
+          <h3>What's on your to-do list?</h3>
           <input
             type="text"
             name="content"
             id="content"
-            placeholder="e.g. Buy Groceries"
+            placeholder="e.g. buy groceries"
           />
-          <h4>Pick a category</h4>
+          <h3>Pick a category</h3>
           <div class="options">
             <label>
               <input type="radio" name="category" id="category1" value="work" />
@@ -46,7 +46,7 @@
         </form>
       </section>
       <section class="to-do-list">
-        <h3>To-Do List</h3>
+        <h2>To-Do List</h2>
         <div class="list" id="to-do-list">
           <!-- <div class="to-do-item">
             <label>
